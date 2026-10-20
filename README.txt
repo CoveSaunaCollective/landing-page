@@ -13,7 +13,6 @@ BEFORE UPLOADING, open index.html in a text editor and replace:
                                   eu.i.posthog.com to us.i.posthog.com
   2. YOUR_BUTTONDOWN_USERNAME  -> your Buttondown username (appears once,
                                   in the signup form)
-  3. YOUR_INSTAGRAM_HANDLE     -> your Instagram handle
 
 POSTHOG EVENTS YOU'LL SEE
   $pageview / $pageleave         visits
