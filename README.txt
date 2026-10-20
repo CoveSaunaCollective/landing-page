@@ -7,10 +7,10 @@ Upload everything in this folder, keeping the structure:
   fonts/    (Fraunces 72pt SuperSoft, self-hosted)
   Courier Prime and Inter Tight load from Google Fonts.
 
-BEFORE UPLOADING, open index.html in a text editor and replace:
-  1. YOUR_POSTHOG_KEY          -> PostHog Project API key (starts phc_)
-                                  If your PostHog project is US-hosted, change
-                                  eu.i.posthog.com to us.i.posthog.com
+SETTINGS ALREADY FILLED IN
+  PostHog (EU region), Buttondown (CoveSaunaCollective) and Instagram
+  (@cove_sauna_collective). If the PostHog project turns out to be
+  US-hosted, change eu.i.posthog.com to us.i.posthog.com in index.html.
 
 POSTHOG EVENTS YOU'LL SEE
   $pageview / $pageleave         visits
