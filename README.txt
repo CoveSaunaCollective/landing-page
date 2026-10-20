@@ -11,8 +11,6 @@ BEFORE UPLOADING, open index.html in a text editor and replace:
   1. YOUR_POSTHOG_KEY          -> PostHog Project API key (starts phc_)
                                   If your PostHog project is US-hosted, change
                                   eu.i.posthog.com to us.i.posthog.com
-  2. YOUR_BUTTONDOWN_USERNAME  -> your Buttondown username (appears once,
-                                  in the signup form)
 
 POSTHOG EVENTS YOU'LL SEE
   $pageview / $pageleave         visits

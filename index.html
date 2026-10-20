@@ -124,8 +124,8 @@ posthog.init('YOUR_POSTHOG_KEY', {
     </div>
     <p class="lede">Sauna and ice baths in a converted warehouse on Parsons Green Lane. Get build updates every week and be first to know when we open.</p>
 
-    <!-- Buttondown: replace YOUR_BUTTONDOWN_USERNAME -->
-    <form class="join" action="https://buttondown.com/api/emails/embed-subscribe/YOUR_BUTTONDOWN_USERNAME" method="post" data-location="hero">
+    <!-- Buttondown signup form -->
+    <form class="join" action="https://buttondown.com/api/emails/embed-subscribe/CoveSaunaCollective" method="post" data-location="hero">
       <label class="sr" for="email-hero">Email address</label>
       <input type="email" name="email" id="email-hero" placeholder="Your email" required autocomplete="email">
       <input type="hidden" name="embed" value="1">
@@ -152,7 +152,7 @@ posthog.init('YOUR_POSTHOG_KEY', {
     el.addEventListener('click', function () { if (window.posthog) posthog.capture(el.dataset.ph); });
   });
 
-  // Buttondown signups (both forms), without leaving the page
+  // Buttondown signup, without leaving the page
   document.querySelectorAll('form.join').forEach(function (form) {
     var msg = form.nextElementSibling;
     var btn = form.querySelector('button');
