@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Back Soon · Cove Sauna Collective</title>
+<meta name="description" content="Cove Sauna Collective is having a quick tidy-up. Back soon.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#162233">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter+Tight:wght@500;800&display=swap" rel="stylesheet">
+
+<style>
+  /* ---------- Brand fonts (self-hosted) ---------- */
+  @font-face{font-family:"Fraunces";src:url(fonts/fraunces-regular.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
+
+  /* ---------- Brand palette (from identity deck) ---------- */
+  :root{
+    --yellow:#FFF200;
+    --navy:#162233;
+    --chalk:#F9F9F9;
+    --serif:"Fraunces",Georgia,serif;
+    --mono:"Courier Prime","Courier New",monospace;
+    --grotesk:"Inter Tight","Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{position:relative;min-height:100svh;background:var(--navy);color:var(--chalk);font-family:var(--serif);font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  img{display:block;max-width:100%;height:auto}
+  a{color:inherit}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+  .mono{font-family:var(--mono);text-transform:uppercase;letter-spacing:.22em;font-size:13px}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  :focus-visible{outline:3px solid currentColor;outline-offset:3px}
+
+  /* ---------- Top bar ---------- */
+  .topbar{position:absolute;top:0;left:0;right:0;z-index:2;color:var(--yellow)}
+  .topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:28px;padding-bottom:28px}
+
+  /* ---------- Hero ---------- */
+  .hero{min-height:100svh;display:flex;align-items:center;padding:100px 0 100px;text-align:center;color:var(--yellow)}
+  .hero .wrap{display:flex;flex-direction:column;align-items:center}
+  .hero .logo{width:min(260px,52vw);transform:rotate(-2deg)}
+  .back{font-family:var(--grotesk);font-weight:800;font-size:clamp(42px,8.5vw,96px);line-height:.95;letter-spacing:-.025em;margin-top:clamp(8px,2vw,16px)}
+  .hero .lede{color:var(--chalk);font-size:clamp(18px,2.2vw,21px);max-width:28em;margin-top:26px;opacity:.92;text-wrap:balance}
+  .tag{width:clamp(170px,26vw,250px);margin-top:34px}
+
+  /* ---------- Bouncing smiley ---------- */
+  .stage{position:relative;width:clamp(120px,22vw,170px);height:clamp(190px,34vw,260px);margin-top:clamp(20px,4vw,36px)}
+  .smile{position:absolute;left:0;right:0;bottom:14px;margin:0 auto;width:100%;padding:0;border:0;background:none;cursor:pointer;transform-origin:50% 100%;animation:bounce 1.3s cubic-bezier(.45,0,.55,1) infinite;-webkit-tap-highlight-color:transparent}
+  .smile img{width:100%}
+  .smile.spin img{animation:spin .7s ease-in-out}
+  .shadow{position:absolute;left:50%;bottom:4px;width:70%;height:14px;transform:translateX(-50%);border-radius:50%;background:rgba(0,0,0,.45);filter:blur(3px);animation:shadow 1.3s cubic-bezier(.45,0,.55,1) infinite}
+  @keyframes bounce{
+    0%  {transform:translateY(0) scale(1.14,.84) rotate(0)}
+    12% {transform:translateY(-18%) scale(.93,1.07) rotate(-4deg)}
+    50% {transform:translateY(-55%) scale(1,1) rotate(3deg)}
+    88% {transform:translateY(-18%) scale(.95,1.05) rotate(-2deg)}
+    100%{transform:translateY(0) scale(1.14,.84) rotate(0)}
+  }
+  @keyframes shadow{
+    0%,100%{transform:translateX(-50%) scale(1);opacity:1}
+    50%    {transform:translateX(-50%) scale(.5);opacity:.4}
+  }
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  /* ---------- Bottom bar ---------- */
+  .bottombar{position:absolute;bottom:0;left:0;right:0;color:var(--yellow)}
+  .bottombar .wrap{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;padding-top:24px;padding-bottom:24px;font-size:11px}
+  .bottombar a{text-decoration:none}
+  .bottombar a:hover{text-decoration:underline;text-underline-offset:4px}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:560px){
+    body{font-size:17px}
+    .topbar .mono{font-size:10.5px;letter-spacing:.16em}
+    .bottombar .wrap{justify-content:center;text-align:center}
+  }
+  @media (prefers-reduced-motion:reduce){.smile,.shadow,.smile.spin img{animation:none!important}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap mono"><span>Cove Sauna Collective</span><span>Parsons Green, SW6</span></div>
+</div>
+
+<main class="hero">
+  <div class="wrap">
+    <h1 class="sr">Cove Sauna Collective is down for maintenance. Back soon.</h1>
+    <img class="logo" src="assets/logo-yellow.png" width="1200" height="621" alt="Cove Sauna Collective">
+
+    <div class="stage">
+      <div class="shadow" aria-hidden="true"></div>
+      <button class="smile" id="smile" type="button" aria-label="Spin the smiley">
+        <img src="assets/smiley-yellow.png" width="1200" height="1173" alt="">
+      </button>
+    </div>
+
+    <p class="back">BACK SOON.</p>
+    <p class="lede">We're giving the site a quick tidy-up. Give us a moment to cool down and we'll be right back.</p>
+    <img class="tag" src="assets/tagline-yellow.png" width="1200" height="414" alt="No sweat, no smile.">
+  </div>
+</main>
+
+<div class="bottombar">
+  <div class="wrap mono">
+    <a href="https://www.instagram.com/cove_sauna_collective/" target="_blank" rel="noopener">Follow the build on Instagram ↗</a>
+    <span>© <span id="yr">2026</span> Cove Sauna Collective Ltd</span>
+  </div>
+</div>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  var smile = document.getElementById('smile');
+  smile.addEventListener('click', function () {
+    smile.classList.remove('spin');
+    void smile.offsetWidth;
+    smile.classList.add('spin');
+  });
+</script>
+</body>
+</html>
