@@ -8,7 +8,7 @@ Upload everything in this folder, keeping the structure:
   Courier Prime and Inter Tight load from Google Fonts.
 
 SETTINGS ALREADY FILLED IN
-  PostHog (EU region), Buttondown (CoveSaunaCollective) and Instagram
+  PostHog (EU region), EmailOctopus (signup form) and Instagram
   (@cove_sauna_collective). If the PostHog project turns out to be
   US-hosted, change eu.i.posthog.com to us.i.posthog.com in index.html.
 

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Back Soon · Cove Sauna Collective</title>
-<meta name="description" content="Cove Sauna Collective is having a quick tidy-up. Back soon.">
+<title>Cove Sauna Collective · Parsons Green, SW6</title>
+<meta name="description" content="Cove is a sauna and ice bath collective opening soon on Parsons Green Lane, London SW6. No sweat, no smile.">
 <meta property="og:title" content="Cove Sauna Collective · Opening soon in Parsons Green">
 <meta property="og:description" content="Sauna and ice baths, open to everyone. No sweat, no smile.">
 <meta property="og:type" content="website">
@@ -35,76 +35,96 @@
   "url": "https://www.covesaunacollective.com/"
 }
 </script>
+<link rel="preload" href="fonts/fraunces-regular.woff" as="font" type="font/woff" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter+Tight:wght@500;800&display=swap" rel="stylesheet">
 
+<!-- ================= PostHog analytics =================
+     Project API key below is public by design (write-only).
+     EU-hosted project assumed; for a US project change api_host to https://us.i.posthog.com
+     persistence:'memory' = no cookies, so no cookie banner needed. -->
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags identify setPersonProperties group resetGroups reset get_distinct_id getGroups get_session_id alias set_config startSessionRecording stopSessionRecording opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_Aykoj8Sb2SZgM4XwS9T9DPqkuhkvE3DtKVcPYrDJs7ce', {
+  api_host: 'https://eu.i.posthog.com',
+  persistence: 'memory',
+  person_profiles: 'identified_only',
+  capture_pageview: true,
+  capture_pageleave: true,
+  autocapture: true
+});
+</script>
+
 <style>
   /* ---------- Brand fonts (self-hosted) ---------- */
   @font-face{font-family:"Fraunces";src:url(fonts/fraunces-regular.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
+  @font-face{font-family:"Fraunces";src:url(fonts/fraunces-italic.woff) format("woff");font-weight:400;font-style:italic;font-display:swap}
+  @font-face{font-family:"Fraunces";src:url(fonts/fraunces-semibold.woff) format("woff");font-weight:600;font-style:normal;font-display:swap}
 
   /* ---------- Brand palette (from identity deck) ---------- */
   :root{
     --yellow:#FFF200;
     --navy:#162233;
+    --charcoal:#2D2D2D;
+    --stone:#E8E4DA;
+    --mist:#EDEAE4;
     --chalk:#F9F9F9;
     --serif:"Fraunces",Georgia,serif;
     --mono:"Courier Prime","Courier New",monospace;
     --grotesk:"Inter Tight","Helvetica Neue",Arial,sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{position:relative;min-height:100svh;background:var(--navy);color:var(--chalk);font-family:var(--serif);font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  html{scroll-behavior:smooth}
+  body{background:var(--navy);color:var(--chalk);font-family:var(--serif);font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased}
   img{display:block;max-width:100%;height:auto}
   a{color:inherit}
   .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
   .mono{font-family:var(--mono);text-transform:uppercase;letter-spacing:.22em;font-size:13px}
   .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-  :focus-visible{outline:3px solid currentColor;outline-offset:3px}
 
   /* ---------- Top bar ---------- */
   .topbar{position:absolute;top:0;left:0;right:0;z-index:2;color:var(--yellow)}
   .topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:28px;padding-bottom:28px}
 
   /* ---------- Hero ---------- */
-  .hero{min-height:100svh;display:flex;align-items:center;padding:100px 0 100px;text-align:center;color:var(--yellow)}
+  .hero{min-height:100svh;display:flex;align-items:center;padding:110px 0 110px;text-align:center;color:var(--yellow)}
   .hero .wrap{display:flex;flex-direction:column;align-items:center}
-  .hero .logo{width:min(260px,52vw);transform:rotate(-2deg)}
-  .back{font-family:var(--grotesk);font-weight:800;font-size:clamp(42px,8.5vw,96px);line-height:.95;letter-spacing:-.025em;margin-top:clamp(8px,2vw,16px)}
-  .hero .lede{color:var(--chalk);font-size:clamp(18px,2.2vw,21px);max-width:28em;margin-top:26px;opacity:.92;text-wrap:balance}
-  .tag{width:clamp(170px,26vw,250px);margin-top:34px}
+  .hero .logo{width:min(520px,80vw,52svh);transform:rotate(-2deg)}
+  .opening{font-family:var(--grotesk);font-weight:800;font-size:clamp(42px,8.5vw,96px);line-height:.95;letter-spacing:-.025em;margin-top:clamp(28px,5vw,48px)}
+  .slogan{display:flex;align-items:center;gap:clamp(14px,2.5vw,26px);margin-top:clamp(22px,4vw,36px)}
+  .slogan .tag{width:clamp(170px,28vw,280px)}
+  .slogan .smile{width:clamp(64px,10vw,104px)}
+  .hero .lede{color:var(--chalk);font-size:clamp(18px,2.2vw,21px);max-width:30em;margin-top:34px;opacity:.92;text-wrap:balance}
 
-  /* ---------- Bouncing smiley ---------- */
-  .stage{position:relative;width:clamp(120px,22vw,170px);height:clamp(190px,34vw,260px);margin-top:clamp(20px,4vw,36px)}
-  .smile{position:absolute;left:0;right:0;bottom:14px;margin:0 auto;width:100%;padding:0;border:0;background:none;cursor:pointer;transform-origin:50% 100%;animation:bounce 1.3s cubic-bezier(.45,0,.55,1) infinite;-webkit-tap-highlight-color:transparent}
-  .smile img{width:100%}
-  .smile.spin img{animation:spin .7s ease-in-out}
-  .shadow{position:absolute;left:50%;bottom:4px;width:70%;height:14px;transform:translateX(-50%);border-radius:50%;background:rgba(0,0,0,.45);filter:blur(3px);animation:shadow 1.3s cubic-bezier(.45,0,.55,1) infinite}
-  @keyframes bounce{
-    0%  {transform:translateY(0) scale(1.14,.84) rotate(0)}
-    12% {transform:translateY(-18%) scale(.93,1.07) rotate(-4deg)}
-    50% {transform:translateY(-55%) scale(1,1) rotate(3deg)}
-    88% {transform:translateY(-18%) scale(.95,1.05) rotate(-2deg)}
-    100%{transform:translateY(0) scale(1.14,.84) rotate(0)}
-  }
-  @keyframes shadow{
-    0%,100%{transform:translateX(-50%) scale(1);opacity:1}
-    50%    {transform:translateX(-50%) scale(.5);opacity:.4}
-  }
-  @keyframes spin{to{transform:rotate(360deg)}}
+  /* ---------- Forms ---------- */
+  form.join{display:flex;gap:10px;flex-wrap:wrap;width:100%;max-width:520px;margin:28px auto 0}
+  form.join input[type=email]{flex:1 1 240px;min-width:0;font:inherit;font-size:17px;padding:15px 22px;border-radius:999px;border:2px solid currentColor;background:transparent;color:inherit}
+  form.join input::placeholder{color:inherit;opacity:.6}
+  .btn{font-family:var(--grotesk);font-weight:800;font-size:15px;letter-spacing:.06em;text-transform:uppercase;padding:16px 26px;border-radius:999px;border:2px solid transparent;cursor:pointer;text-decoration:none;display:inline-block;transition:transform .15s ease}
+  .btn:hover{transform:translateY(-2px)}
+  .btn:disabled{opacity:.6;cursor:wait;transform:none}
+  .btn-yellow{background:var(--yellow);color:var(--navy)}
+  .btn-navy{background:var(--navy);color:var(--yellow)}
+  :focus-visible{outline:3px solid currentColor;outline-offset:3px}
+  .form-msg{min-height:1.6em;margin-top:14px;font-size:16px}
+  .fine{font-size:12px;margin-top:6px;opacity:.7}
 
   /* ---------- Bottom bar ---------- */
   .bottombar{position:absolute;bottom:0;left:0;right:0;color:var(--yellow)}
   .bottombar .wrap{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;padding-top:24px;padding-bottom:24px;font-size:11px}
   .bottombar a{text-decoration:none}
   .bottombar a:hover{text-decoration:underline;text-underline-offset:4px}
+  body{position:relative;min-height:100svh}
 
   /* ---------- Responsive ---------- */
   @media (max-width:560px){
     body{font-size:17px}
     .topbar .mono{font-size:10.5px;letter-spacing:.16em}
     .bottombar .wrap{justify-content:center;text-align:center}
+    form.join .btn{width:100%}
   }
-  @media (prefers-reduced-motion:reduce){.smile,.shadow,.smile.spin img{animation:none!important}}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
@@ -113,27 +133,29 @@
   <div class="wrap mono"><span>Cove Sauna Collective</span><span>Parsons Green, SW6</span></div>
 </div>
 
-<main class="hero">
+<!-- ================= HERO ================= -->
+<header class="hero">
   <div class="wrap">
-    <h1 class="sr">Cove Sauna Collective is down for maintenance. Back soon.</h1>
+    <h1 class="sr">Cove Sauna Collective: sauna and ice baths opening soon in Parsons Green</h1>
     <img class="logo" src="assets/logo-yellow.png" width="1200" height="621" alt="Cove Sauna Collective">
-
-    <div class="stage">
-      <div class="shadow" aria-hidden="true"></div>
-      <button class="smile" id="smile" type="button" aria-label="Spin the smiley">
-        <img src="assets/smiley-yellow.png" width="1200" height="1173" alt="">
-      </button>
+    <p class="opening">OPENING SOON.</p>
+    <div class="slogan">
+      <img class="tag" src="assets/tagline-yellow.png" width="1200" height="414" alt="No sweat, no smile.">
+      <img class="smile" src="assets/smiley-yellow.png" width="1200" height="1173" alt="">
     </div>
+    <p class="lede">Sauna and ice baths in a converted warehouse on Parsons Green Lane. Get build updates every week and be first to know when we open.</p>
 
-    <p class="back">BACK SOON.</p>
-    <p class="lede">We're giving the site a quick tidy-up. Give us a moment to cool down and we'll be right back.</p>
-    <img class="tag" src="assets/tagline-yellow.png" width="1200" height="414" alt="No sweat, no smile.">
+    <!-- EmailOctopus signup form (the script swaps itself for the form) -->
+    <div class="eo-signup" data-location="hero">
+      <script async src="https://eomail5.com/form/849eda9e-d234-11f1-b01f-4d9630283ebd.js" data-form="849eda9e-d234-11f1-b01f-4d9630283ebd"></script>
+    </div>
+    <p class="fine mono">One email a week, tops. By subscribing you agree to receive our newsletter. Unsubscribe anytime.</p>
   </div>
-</main>
+</header>
 
 <div class="bottombar">
   <div class="wrap mono">
-    <a href="https://www.instagram.com/cove_sauna_collective/" target="_blank" rel="noopener">Follow the build on Instagram ↗</a>
+    <a href="https://www.instagram.com/cove_sauna_collective/" target="_blank" rel="noopener" data-ph="instagram_click">Follow the build on Instagram ↗</a>
     <span>© <span id="yr">2026</span> Cove Sauna Collective Ltd</span>
   </div>
 </div>
@@ -141,11 +163,21 @@
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
 
-  var smile = document.getElementById('smile');
-  smile.addEventListener('click', function () {
-    smile.classList.remove('spin');
-    void smile.offsetWidth;
-    smile.classList.add('spin');
+  // Custom click events: any element with data-ph="event_name"
+  document.querySelectorAll('[data-ph]').forEach(function (el) {
+    el.addEventListener('click', function () { if (window.posthog) posthog.capture(el.dataset.ph); });
+  });
+
+  // EmailOctopus signup tracking. The form loads later, so listen on its wrapper.
+  document.querySelectorAll('.eo-signup').forEach(function (box) {
+    var where = box.dataset.location;
+    var started = false;
+    box.addEventListener('focusin', function (e) {
+      if (!started && e.target.matches('input[type=email]') && window.posthog) { started = true; posthog.capture('newsletter_form_focus', { location: where }); }
+    });
+    box.addEventListener('submit', function () {
+      if (window.posthog) posthog.capture('newsletter_signup', { location: where });
+    }, true);
   });
 </script>
 </body>
