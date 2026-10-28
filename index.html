@@ -98,16 +98,23 @@ posthog.init('phc_Aykoj8Sb2SZgM4XwS9T9DPqkuhkvE3DtKVcPYrDJs7ce', {
   .hero .lede{color:var(--chalk);font-size:clamp(18px,2.2vw,21px);max-width:30em;margin-top:34px;opacity:.92;text-wrap:balance}
 
   /* ---------- Forms ---------- */
-  form.join{display:flex;gap:10px;flex-wrap:wrap;width:100%;max-width:520px;margin:28px auto 0}
-  form.join input[type=email]{flex:1 1 240px;min-width:0;font:inherit;font-size:17px;padding:15px 22px;border-radius:999px;border:2px solid currentColor;background:transparent;color:inherit}
-  form.join input::placeholder{color:inherit;opacity:.6}
+  /* EmailOctopus form, styled like the original pill form. Its "Powered by" badge stays as supplied. */
+  .eo-signup{width:100%;max-width:520px;margin:28px auto 0}
+  .eo-signup [data-form]{--field-colour:transparent;--field-border-colour:var(--yellow);--button-colour:var(--yellow);--button-text-colour:var(--navy);--text-colour:var(--chalk)}
+  .eo-signup [data-form] .emailoctopus-form .main-form{display:flex;gap:10px;flex-wrap:wrap}
+  .eo-signup [data-form] .emailoctopus-form .main-form>div{flex:1 1 240px;min-width:0}
+  .eo-signup [data-form] .emailoctopus-form .emailoctopus-form-row{margin:0}
+  .eo-signup [data-form] .emailoctopus-form input[type=email]{height:auto;font-family:var(--serif);font-size:17px;line-height:1.5;padding:15px 22px;border-radius:999px;border:2px solid var(--yellow);background:transparent;color:var(--yellow);box-shadow:none}
+  .eo-signup [data-form] .emailoctopus-form input[type=email]::placeholder{color:var(--yellow);opacity:.6}
+  .eo-signup [data-form] .emailoctopus-form [type=submit]{width:auto;height:auto;margin:0;font-family:var(--grotesk);font-weight:800;font-size:15px;line-height:1.5;letter-spacing:.06em;text-transform:uppercase;padding:16px 26px;border-radius:999px;border:2px solid transparent;background:var(--yellow);color:var(--navy);box-shadow:none;transition:transform .15s ease}
+  .eo-signup [data-form] .emailoctopus-form [type=submit]:hover{transform:translateY(-2px)}
+  .eo-signup [data-form] .emailoctopus-success-message,.eo-signup [data-form] .emailoctopus-error-message{font-family:var(--serif);font-size:16px;color:var(--chalk)}
   .btn{font-family:var(--grotesk);font-weight:800;font-size:15px;letter-spacing:.06em;text-transform:uppercase;padding:16px 26px;border-radius:999px;border:2px solid transparent;cursor:pointer;text-decoration:none;display:inline-block;transition:transform .15s ease}
   .btn:hover{transform:translateY(-2px)}
   .btn:disabled{opacity:.6;cursor:wait;transform:none}
   .btn-yellow{background:var(--yellow);color:var(--navy)}
   .btn-navy{background:var(--navy);color:var(--yellow)}
   :focus-visible{outline:3px solid currentColor;outline-offset:3px}
-  .form-msg{min-height:1.6em;margin-top:14px;font-size:16px}
   .fine{font-size:12px;margin-top:6px;opacity:.7}
 
   /* ---------- Bottom bar ---------- */
@@ -122,7 +129,7 @@ posthog.init('phc_Aykoj8Sb2SZgM4XwS9T9DPqkuhkvE3DtKVcPYrDJs7ce', {
     body{font-size:17px}
     .topbar .mono{font-size:10.5px;letter-spacing:.16em}
     .bottombar .wrap{justify-content:center;text-align:center}
-    form.join .btn{width:100%}
+    .eo-signup [data-form] .emailoctopus-form [type=submit]{width:100%}
   }
   @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
